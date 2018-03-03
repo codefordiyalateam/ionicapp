@@ -1,0 +1,35 @@
+
+<ion-header> 
+  <ion-navbar  color="primary" >
+     <ion-title> ادخل باستخدام حسابك</ion-title> 
+    </ion-navbar>
+   </ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+     <ion-item>
+         <ion-label floating> Email </ion-label>
+         <ion-input type="text" [(ngModel)]="email" ></ion-input>
+    </ion-item>
+      
+   <ion-item>
+         <ion-label floating> Password </ion-label>
+         <ion-input type="password"  [(ngModel)]="password" ></ion-input>
+    </ion-item>
+       
+    <ion-item>
+ 
+           <button ion-button block large  icon-right  (click)= " login () " > 
+              <ion-icon name= ios-log-in large> دخول </ion-icon>   
+              </button>
+
+     </ion-item>
+     <button ion-button color="primary" (click)="signUP()">انشاء حساب جديد</button>
+     <button ion-button color="danger" (click)="google()">google</button>
+     <button ion-button color="primary" (click)="facebook()">facebook</button>
+  </ion-list>
+
+</ion-content>
