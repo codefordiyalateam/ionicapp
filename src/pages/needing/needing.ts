@@ -92,7 +92,7 @@ export class NeedingPage {
 
    //else
    
-   this.navCtrl.push (AddneedingPage)
+   this.navCtrl.push (LoginPage)//AddneedingPage
 
    }
   deleteMy(key){

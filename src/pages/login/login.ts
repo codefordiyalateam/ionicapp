@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams ,ToastController , AlertController } from 'ionic-angular';
-import {SignupPage} from '../signup/signup';
+
 import { AngularFireAuth } from 'angularfire2/auth';
+import firebase from 'firebase';
 
 import {AddneedingPage} from '../addneeding/addneeding';
 import {HomePage} from '../home/home';
-
+import {SignupPage} from '../signup/signup';
 
 
 @IonicPage()
@@ -81,7 +82,7 @@ export class LoginPage {
       console.log('Dismissed toast');
     }); 
     this.loginfire.auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider()).then(user =>{
-      this.navCtrl.setRoot(HomePage);
+      this.navCtrl.setRoot(AddneedingPage);
     });
     
   }

@@ -3,7 +3,7 @@
   
   <ion-navbar color="primary" >
 
-     <ion-title>تسجيل دخول</ion-title> 
+     <ion-title> انشاء حساب</ion-title> 
 
     </ion-navbar>
     
@@ -18,68 +18,36 @@
    
 
     <ion-item>
-         <ion-label floating>Email</ion-label>
+      <ion-label floating> <ion-icon ios="ios-person" md="md-person"> البريدالالكتروني</ion-icon> </ion-label>
+
          <ion-input type="text" [(ngModel)]="email" ></ion-input>
     </ion-item>
                  
     <ion-item>
-         <ion-label floating>Password</ion-label>
+         <ion-label floating>  <ion-icon ios="ios-lock" md="md-lock"> كلمة المرور </ion-icon></ion-label>
          <ion-input type="password"  [(ngModel)]="password"></ion-input>
     </ion-item>
 
                   
     <ion-item>            
-      <button ion-button  block large  icon-right  (click)="Signup()"  >
-        <ion-icon name= ios-add-circle  large> اضافة حساب </ion-icon>        
+      <button ion-button  block large  icon-right   (click)="Signup()"  >
+        <ion-icon name= ios-add-circle  large > اضافة حساب </ion-icon>        
 
       </button>        
     </ion-item>
         
 
-<!-- 
-     <ion-item>  تمتلك حساباً ؟  </ion-item>
-      
-      
+    <ion-item>
 
+      <button ion-button block large  icon-right color="danger" (click)="gotoLogin()"  >
+          <ion-icon name= ios-log-in  large> دخول </ion-icon>              
+         
+        </button>
 
-      <ion-item>  سجل دخول باستخدام الحساب  </ion-item>
-       -->
-     
-  
+    </ion-item>  
 
-      <ion-item>
+    
 
-          <button ion-button block large  icon-right (click)="gotoLogin()"  >
-              <ion-icon name= ios-log-in  large> دخول </ion-icon>              
-             
-            </button>
-
-      </ion-item>
-     
-
-
-<!-- 
-   <ion-item>  او قم بتسجيل الدخول باستخدام  </ion-item> -->
-  
-
-     
-
-  
-<!-- 
-   <ion-item>
-            
-            <button ion-button  block large icon-right  (click)="GoogleLogin()" >
-                <ion-icon ios= logo-google  large> google </ion-icon>
-             </button>
-              
-    </ion-item> -->
-
-    <!-- <ion-item>
-            
-        <button ion-button block large  icon-right (click)="FacebookLogin()"> 
-            <ion-icon name= logo-facebook  large> facebook </ion-icon>
-           </button>  
-    </ion-item> -->
 
    </ion-list>
   
