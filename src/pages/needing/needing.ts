@@ -87,12 +87,9 @@ export class NeedingPage {
 
    goToAdd(){
 
-    //if the user is already logged in 
-    //this.navCtrl.push (AddneedingPage)
-
-   //else
+    
    
-   this.navCtrl.push (LoginPage)//AddneedingPage
+   this.navCtrl.push (LoginPage)
 
    }
   deleteMy(key){

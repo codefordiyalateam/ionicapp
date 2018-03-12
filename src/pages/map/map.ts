@@ -12,8 +12,7 @@ import {
   Marker
  } from '@ionic-native/google-maps';
 
- import { Geolocation } from '@ionic-native/geolocation';
-
+ 
  import { Http } from '@angular/http';
 import'rxjs/add/operator/map';
 
@@ -37,7 +36,7 @@ export class MapPage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public platform:Platform,
-    public  geolocation: Geolocation , private http: Http) {
+  private http: Http) {
 
     platform.ready().then(()=>{ 
       this.loadmap();
@@ -82,7 +81,7 @@ export class MapPage {
   }
 
 
- //*** add markers*** //
+ 
 
  ionviewDidload(){  
    this.getMarkers();
@@ -108,7 +107,7 @@ export class MapPage {
 
 
    
- //***add lable infowindow***//
+ 
 
  let infoWindow = new google.maps.InfoWindow({
 
@@ -123,7 +122,7 @@ export class MapPage {
    infoWindow.open(this.map, marker);
    });
 
-  //***lable infowindow****//
+  
 
  
  }

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-//pages
+
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import {  HumancasePage } from '../pages/humancase/humancase';
@@ -29,9 +29,8 @@ import { AngularFireModule} from 'angularfire2';
  import { AngularFirestore  } from 'angularfire2/firestore';
 
 
- import { Geolocation } from '@ionic-native/geolocation';
+ 
  import { HttpModule } from '@angular/http';
-
 
  import {GoogleMaps} from '@ionic-native/google-maps';
  
@@ -101,7 +100,7 @@ import { AngularFireModule} from 'angularfire2';
    
   ],
   providers: [   
-    Geolocation,
+   
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
